@@ -182,9 +182,9 @@
 }
 
 .login-text {
-    text-decoration: none;
     color: #FFF;
     transition: color 0.2s linear;
+    text-decoration: underline;
 }
 
 .login-text:hover {
@@ -531,6 +531,10 @@
 
     .container {
         padding: 0 20px;
+    }
+
+    body:not(.signup, .login) .header {
+        margin: 0;
     }
 
     .header--fixed {
@@ -1074,7 +1078,8 @@
     /* Header  */
 
     body:not(.signup, .login) .header{
-        margin: 20px 0 40px;
+        padding-top: 20px;
+        margin-bottom: 40px;
     }
 
     /* Intro  */
@@ -1445,8 +1450,49 @@
     }
 }
 
+@media screen and (max-width:650px) {
+    /* Blog Page   */ 
 
-@media screen and (max-width:510px) {
+    .blog-title {
+        font-size: 33px;
+        line-height: 40px;
+    }
+    
+    .blog-subtitle {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .blog-item {
+        padding: 10px 5px 10px 12px;
+        flex-basis: calc(49.49% - 8px);
+    }
+
+    .blog-item img {
+        width: 30px;
+        height: 31px;
+        margin-bottom: 10px;
+    }
+
+    .imgcm {
+        margin-top: 45px;
+    }
+
+    .coming-soon {
+        font-size: 12px;
+        top: 5px;
+        right: 5px;
+        width: 118px;
+    }
+
+    .medium-blog {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:520px) {
     /* Header  */
 
     .logo a {
@@ -1489,7 +1535,7 @@
     .intro-btn1 {
         width: 130px;
         height: 47px;
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .intro-btn2 {
@@ -1678,44 +1724,4 @@
         line-height: 20px;
     }
 
-
-    /* Blog Page   */ 
-
-    .blog-title {
-        font-size: 33px;
-        line-height: 40px;
-    }
-    
-    .blog-subtitle {
-        font-size: 12px;
-        line-height: 16px;
-    }
-
-    .blog-item {
-        padding: 10px 5px 10px 12px;
-        flex-basis: calc(49.49% - 8px);
-    }
-
-    .blog-item img {
-        width: 30px;
-        height: 31px;
-        margin-bottom: 10px;
-    }
-
-    .imgcm {
-        margin-top: 45px;
-    }
-
-    .coming-soon {
-        font-size: 12px;
-        top: 5px;
-        right: 5px;
-        width: 118px;
-    }
-
-    .medium-blog {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
 }

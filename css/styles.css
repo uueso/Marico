@@ -220,7 +220,8 @@ body:not(.signup, .login) .header {
         height: 33px;
     }
     body:not(.signup, .login) .header{
-        margin: 20px 0 60px;
+        padding-top: 20px;
+        margin-bottom: 60px;
     }
   }
 
